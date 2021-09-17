@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TP_No_Border</title>
+</head>
+<body>
+    <section>
+        <div class="title">
+            <div><h1>Login to your account</h1></div>
+        </div>
+
+        <div id="globform">
+            <div>
+                <form method="POST" id="formulaire">
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name">
+
+                    <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+
+                    <input type="password" name="passw" id="passw" placeholder="Password" required>
+
+
+                   <div>
+                        <label for="remember">Remember me</label>
+                        <input type="checkbox" name="remember" id="remember">
+                   </div>
+
+                   <div class="button">
+                        <input type="submit" value="LOGIN" name="validation" id="login">
+                   </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

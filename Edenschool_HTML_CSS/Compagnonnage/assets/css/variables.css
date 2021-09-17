@@ -1,0 +1,11 @@
+*{
+    --orange-red: #fe5f55;
+    --boxcolor: rgba(254, 95, 85, 0.60 );
+    --light-blue: #a3e7fc;
+    --blue-grey: #7f7f9f;
+    --brown: #5a3a31;
+    --bgcolor: rgba(101, 58, 49, 0.35);
+    --dark-brown: #31231e;
+    --bodyfont: 'Montserrat', sans-serif;
+    --titles-font: 'Quattrocento Sans', sans-serif;
+}

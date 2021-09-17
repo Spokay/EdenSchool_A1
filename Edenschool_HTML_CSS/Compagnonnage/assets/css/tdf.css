@@ -1,0 +1,176 @@
+
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,500';
+
+
+.gib-container
+{
+  width: 67.5%;
+  margin: 30px auto;
+  
+  background-color:var(--bgcolor);
+  height:159em;
+}
+
+.header-box{
+  background-color: rgba(254, 95, 85, 0.60 );
+  box-shadow: 5px -5px 24px black;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+.header-box1
+{
+  margin-left: 0;
+  font-size: 17px;
+}
+.header-text
+{
+  padding-left: 5em;
+  padding-right: 5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.h-title {
+	font-family: var(--titles-font);
+	font-size: 2em;
+    text-align: center;
+	margin: 0 auto;
+	padding-top:1em;
+}
+figure 
+{
+  width:50%;
+  margin:0 auto;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+figure img
+{
+  margin: 0 auto;
+  
+ -webkit-flex: 1;
+ -ms-flex: 1;
+ flex: 1;
+ overflow: hidden;
+ outline: 2px solid white;
+ outline-offset: -15px;
+ background-color: blue;
+ box-shadow: 5px 0px 40px 5px rgba(0,0,0,0.5);
+}
+section
+{
+  display:flex;
+  flex-direction:row;
+  
+}
+.sec1
+{
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+.sec2
+{
+	display:flex;
+  flex-direction:row;
+  
+	padding-bottom: 5em;
+}
+.sec2 figcaption
+{
+	text-align: right;
+}
+.header-box2
+{
+	margin-right: 0;
+	height:16em;
+}
+.header-hr
+{
+	padding-bottom: 6em;
+	margin: 0 auto;
+	
+	width: 95.5%;
+}
+
+.sec3
+{
+	padding-top: 3em;
+
+}
+.sec3 figure
+{
+	position: relative;
+	bottom:30em;
+}
+.sec3 figcaption
+{
+	width:80%;
+	display: inline-block;
+}
+.sec3 figure img
+ {
+	 width:30em;
+ }
+.sec4
+{
+	position: relative;
+	top:15em;
+}
+footer{
+	background-color: var(--brown);
+	height: 200px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+  footer section:nth-child(1){
+	width: 50%;
+	height: 150px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .footerlinks1{
+	width: calc(100% / 3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center
+  }
+  
+  .footerlinks3{
+	width: calc(100% / 3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center
+  }
+  
+  .footerlinks2{
+	width: calc(100% / 3);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center
+  }
+  
+  .footerlinks1 a, .footerlinks2 a, .footerlinks3 a{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+  }
+  
+  footer section:nth-child(2){
+	width: 30%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  footer section:nth-child(2) p{
+	color: var(--blue-grey);
+	font-size: 12px;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire complet</h1>
+    <!-- Il existe plein de ressources sur internet pour les formulaires.
+    
+    Un site bien fait sur ce sujet avec une présentation assez pratique : https://html.com/?s=input -->
+
+    <form method="POST" action="" enctype="">
+    <!--METHOD = comment circulent les données en PHP, ENCTYPE concerne la récupération des fichiers, ACTION est l'url de destination des données-->
+     <!-- 
+        Un formulaire doit TOUJOURS être dans des balises <form> pour fonctionner (envoyer les données)
+        l'attribut 'method' définit la méthode d'envoi des saisies vers le serveur
+        l'attribut 'action' définit l'url de destination des saisies
+      -->
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" name="pseudo" required>
+        <br>
+        <!--ID fait le lien avec le FOR du label en HTML => quand on clique dans un label le curseur se place dans l'input qui a le même ID.  le NAME est récupéré en PHP. Ce type d'ID étant dans un formulaire il n'y a pas le souci de limiter l'utilisation de l'attribut ID.-->
+        <!-- 
+            Les 'name' des input constituent les indices de l'array $_POST qui réceptionne les infos
+         -->
+    
+        <label for="mdp">Mot de passe *</label>
+        <input type="password" id="mdp" name="mdp" required>
+        <!-- le type "password" demande au navigateur de remplacer les caractères saisis par des points 
+        pour afficher / cacher le code cela passe par du javascript qui va permettre de changer le type à l'intérieur du champs pour que les caractères soient visibles
+        -->
+        <br>
+    
+        <label for="email">Email *</label>
+        <!--* pour champs obligatoire REQUIRED dans l'input-->
+        <!-- 
+            Attributs readonly et disabled 
+            Ils sont similaires pour l'utilisateur qui ne peut modifier le contenu (ou l'absence de contenu d'un champs <input>.
+            
+            Cependant il y a une grande différence entre les 2 :
+            >> readonly
+            la value de l'élément sera envoyée au serveur avec le reste des informations saisies par l'utilisateur
+            >> disabled
+            la valeur de l'élément n'est pas envoyée au serveur
+        --> 
+        <input type="email" id="email" name="email" placeholder="email" required>
+        <br>
+        <!--PLACEHOLDER est le texte explicatif en grisé dans le champs non encore rempli. Le contenu d'un placeholder n'est jamais envoyé au serveur même si le champs n'a pas été renseigné-->
+    
+        <label for="file">Avatar *</label>
+        <input type="file" id="file" name="file">
+        <br>
+        <!--type FILE créé un bouton "parcourir" pour aller chercher un fichier-->
+    
+        <label for="book">Livres</label>
+        <select id="book" name="book">
+            <!--liste déroulante avec SELECT et non INPUT-->
+            <optgroup label="BD">
+                <!--option groupe = sous-catégorie dans la liste
+                /!\ l'attribut LABEL doit obligatoirement être renseigné-->
+                <option value="3T">Le Troisième Testament</option>
+                <option value="TT">Tintin</option>
+            </optgroup>
+            <optgroup label="Manga">
+                <!--option groupe = sous-catégorie dans la liste-->
+                <option value="SS">Saint Seya</option>
+                <option value="DBZ">Dragon BallZ</option>
+            </optgroup>
+        </select>
+        <br>
+    
+        <label for="choix">Choisir</label>
+        <p>
+            <!--cases à cocher carrées, CHECKED en coche une par défaut-->
+            <input type="checkbox" name="choix" checked>choix1
+            <input type="checkbox" name="choix">choix2
+            <input type="checkbox" name="choix">choix3
+        </p>
+    
+        <label for="civilite">Civilité</label>
+        <p>
+            <!--cases à cocher rondes, CHECKED en coche une par défaut et une seule peut être choisie-->
+            <input type="radio" name="civilite" value="m" checked>Homme
+            <input type="radio" name="civilite" value="f">Femme
+        </p>
+    
+        <label for="ville">Ville</label>
+        <input type="text" id="ville" name="ville" list="france">
+        <datalist id="france">
+            <!--la datalist permet de suggérer lorsque l'utilisateur tape. couplé avec du PHP il va aller récupérer les informations dans une base de données
+            un exemple : les villes, on se doute bien qu'un développeur ne va pas taper à la main toutes les villes qui existent mais les récupère de façon dynamique
+        
+            IMPORTANT : l'attribut LIST de l'INPUT doit avoir la même valeur que l'ID de la balise DATALIST pour que le lien existe-->
+            <option>Paris</option>
+            <option>Lyon</option>
+            <option>Marseille</option>
+        </datalist>
+        <br>
+    
+        <label for="cp">Code postal</label>
+        <input type="text" id="id" name="id" maxlength="5" pattern="[0-9]{5}">
+        <br>
+        <!--
+            MAXLENGTH impose un max de caractères
+            PATTERN permet d'imposer le type de caractères numériques à l'aide d'une 'expression' définissant ceux-ci (ici les chiffres de 0 à 9) et de préciser aussi le nombre de caractère max
+        -->
+    
+
+         <!-- TEXTAREA
+            Si on a besoin de champs pour récupérer des adresses mail, numéros de téléphone, et autres contenus faciles à définir, on utilisera un type <input> approprié.
+            Par contre, quand on a besoin d'un champs qui accepte tout types de combinaisons et de longueur de caractères, symboles et chiffres, il faut utiliser la balise <textarea>.
+          -->
+        <label for="adress">Adresse</label>
+        <textarea id="adress" name="adress" rows="15" cols="25" value="hello" placeholder="texte..."></textarea>
+        <br>
+        <!--zone de texte avec les réglages de sa taille ROWS et COLS-->
+        <!-- 
+            Les ID et les FOR sont liés : ils permettent de placer le curseur dans l'<input> quand on clique sur le <label>
+
+            /!\ ne pas mettre de contenu dans un <textarea> (l'internaute devra effacer celui-ci avant de taper ses infos >> risque d'envoi en BDD)
+         -->
+    
+        <label for="jauge">Jauge</label>
+        <input type="range" min="0" max="50" value="25" id="jauge">
+        <br>
+        <!--MIN et MAX correspondent à l'échelle et VALUE à la place du curseur par défaut, ici au milieu-->
+    
+        <label for="couleur">Couleur</label>
+        <input type="color">
+        <!-- le type "color" demande au navigateur d'afficher un colorpicker / pipette des couleurs -->
+        <br>
+    
+        <input type="submit" name="inscription" value="S'inscrire">
+        <!-- avec le type "submit" les données saisies dans les champs du formulaire sont envoyées  -->
+        <input type="reset" name="efface" value="Recommencer">
+        <!-- avec le type "reset" les données saisies dans les champs du formulaire sont effacées sans être envoyées -->
+        <br>
+        <!-- on peut aussi utiliser la balise <button type="submit"> -->
+
+
+    
+    </form>
+</body>
+</html>

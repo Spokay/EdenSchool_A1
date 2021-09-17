@@ -1,0 +1,125 @@
+h1{
+	text-align: center;
+}
+#globdiv{
+	width: 45%;
+	margin: 0 auto;
+}
+#gallery-container{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#bg-image{
+	display: flex;
+}
+.lighter-toggle{
+	filter: brightness(80%);
+}
+#images-preview > img{
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	max-height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+#images-preview{
+	display: none;
+	overflow: hidden;
+}
+#bg-image{
+	width: 45vw;
+	height: 45vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#bg-image > img{
+	width: 100%;
+	object-fit: cover;
+}
+#controller input{
+	width: 100px;
+	height: 50px;
+}
+#controller{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#controller > div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#images-preview img:hover{
+	border: 5px solid grey;
+}
+#dl-link > button{
+	cursor: pointer;
+}
+.btn-gradient{
+    background: linear-gradient(to left ,#34a0a4, #1e6091) padding-box, linear-gradient(to right, lightseagreen, darkslategrey) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+}
+.btn-gradient{
+       position: relative;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1rem;
+       color: #FFFFFF;
+       padding: 12.5px 31.25px;
+       cursor: pointer;
+       transition: color .2s;
+}
+.btn-gradient:hover {
+    color: #76c893;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	#images-preview{
+		display: none;
+		overflow: hidden;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#images-preview{
+		display: flex;
+	}
+	#images-preview > img{
+		height: 92px;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	#images-preview{
+		display: flex;
+	}
+	#images-preview > img{
+		height: 120px;
+	}
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+	#images-preview{
+		display: flex;
+	}
+	#images-preview > img{
+		height: 150px;
+		width: calc(100%/5);
+	}
+}

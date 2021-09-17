@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+nav.navbar.bg-primary, .bg-primary, a.btn-primary, a.nav-link.active, input.btn-primary{
+    background-color: #8E94F2 !important;
+    border-color: #8E94F2 !important;
+}
+a{
+    color: #8E94F2;
+}
+*{
+    box-sizing: border-box;
+}
+nav img{
+    width: 50px;
+    margin-right: 1vw;
+}
+.navbar-brand{
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
+    letter-spacing: 0.5vw;
+}
+.container > main{
+    padding-top: 80px;
+}
+
+#lime{
+    background-image: url(../img/lime.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+#agrumes{
+    background-image: url(../img/les-agrumes_620x400.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.footer{
+    background-color: #8E94F2;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: #FFFFFF;
+}
+.footer span{
+    font-family: 'Merienda', cursive;
+}

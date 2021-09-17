@@ -1,0 +1,54 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+table{
+    width: 60%;
+    margin: 0 auto;
+}
+
+table thead th img{
+    width: 100%;
+    display: block;
+    height: 418.97px;
+}
+
+.conseils{
+    background-color: #055AAA;
+}
+
+.conseils {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.conseils span{
+    color: #E6C906;
+}
+
+tr td:nth-child(1){
+    width: 15%;
+    text-transform: uppercase;
+    color: #055AAA;
+}
+
+tr td:nth-child(2){
+    width: 85%;
+}
+
+tr td p:nth-child(1){
+    color: #0055AB;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 5px;
+}
+
+tr td p:nth-child(2){
+    font-size: 20px;
+    width: 50%;
+}
+
+tr td img{
+    width: 100%;
+}

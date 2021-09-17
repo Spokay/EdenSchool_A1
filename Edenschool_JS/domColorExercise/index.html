@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sélecteurs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            margin: 0;
+        }
+        .color, .color2{
+            width: calc(100%/5);
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 15em;
+            flex-wrap: wrap;
+            flex-direction: column;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<section id="section1" style="display: flex; justify-content: center"><a href="https://www.edenschool.fr"></a></section>
+<!--<section id="section2">Sélection par getElementById</section>-->
+<!--<hr>-->
+<!--<span>sélection par getElementsByTagName</span>-->
+<form method="post" id="formColor" style="height: 15em; display: flex; align-items: center; justify-content: center">
+    <input type="text" id="red" placeholder="valeur rouge">
+    <input type="text" id="green" placeholder="valeur vert">
+    <input type="text" id="blue" placeholder="valeur bleu">
+    <input type="submit" value="valider">
+</form>
+
+<form method="post" id="formRandom" style="height: 15em; display: flex; align-items: center; justify-content: center">
+    <input type="submit" id="subRandom" value="choisir une couleur aléatoire">
+</form>
+
+<div id="bigdiv" style="display: flex">
+    <div class="color"><p></p></div>
+    <div class="color"><p></p></div>
+    <div class="color"><p></p><input type="submit" value="generate random colors" id="submit2"></div>
+    <div class="color"><p></p></div>
+    <div class="color"><p></p></div>
+</div>
+
+<div id="bigdiv2" style="display: flex">
+    <div class="color2"><p></p></div>
+    <div class="color2"><p></p></div>
+    <div class="color2"><p></p></div>
+    <div class="color2"><p></p></div>
+    <div class="color2"><p></p></div>
+</div>
+
+
+
+
+
+<!--<div class="lesDiv">div0 sélectionné par getElementsByClassName</div>-->
+<!--<div class="lesDiv">div1 sélectionné par getElementsByClassName</div>-->
+<!--<div class="lesDiv">div2 sélectionné par getElementsByClassName</div>-->
+<!--<hr>-->
+<!--<p>paragraphe 1 sélectionné par querySelector</p>-->
+<!--<p>paragraphe 2 sélectionné par querySelector</p>-->
+<!--<p>paragraphe 3 sélectionné par querySelector</p>-->
+<!--<p>paragraphe 4 sélectionné par querySelector</p>-->
+
+<!--&lt;!&ndash; exo &ndash;&gt;-->
+<!--<article class="exo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore officiis veritatis dicta vero explicabo consectetur. Ab modi, voluptatum nostrum nam enim, atque perspiciatis ducimus eius vitae eligendi cum commodi.</article>-->
+<!--<article class="exo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore officiis veritatis dicta vero explicabo consectetur. Ab modi, voluptatum nostrum nam enim, atque perspiciatis ducimus eius vitae eligendi cum commodi.</article>-->
+<!--<article class="exo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore officiis veritatis dicta vero explicabo consectetur. Ab modi, voluptatum nostrum nam enim, atque perspiciatis ducimus eius vitae eligendi cum commodi.</article>-->
+<!--<article class="exo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore officiis veritatis dicta vero explicabo consectetur. Ab modi, voluptatum nostrum nam enim, atque perspiciatis ducimus eius vitae eligendi cum commodi.</article>-->
+<!-- les scripts js -->
+<script src="script.js"></script>
+</body>
+</html>

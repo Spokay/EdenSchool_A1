@@ -1,0 +1,270 @@
+
+
+html{
+    font-size: 10px;
+}
+
+body{
+    border: 2px solid black;
+}
+
+p{
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+}
+
+#toppage {
+    background-color: darkblue;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#navigation {
+    background-color:#5FAFB7;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+}
+
+#navigation ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#navigation li{
+    display: flex;
+    width: 10%;
+}
+
+#containermidpage{
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.middlepageblock{
+    width: 46%;
+    height: 38vw;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.middlepage1 {
+    background-color:#D66D7C;
+}
+
+.middlepage2 {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+
+.middlepage3 {
+    background: linear-gradient(#e66465, #9198e5);
+}
+
+.middlepage4 {
+    background-color:#D66D7C;
+}
+
+.lion{
+    display: none;
+}
+
+#bottompage {
+    background-color: #003548;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* mediaqueries */
+
+
+@media screen and (max-width: 575.98px){
+    #containermidpage{
+        display: block;
+    }
+
+    .middlepageblock{
+        width: 93%;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    a{
+        font-size: 1rem;
+    }
+
+    #navigation ul{
+        justify-content: space-evenly;
+    }
+
+    .middlepage1{
+        background-color: cyan;
+    }
+
+    .middlepage2{
+        background: #3822ff;
+    }
+
+    .middlepage3{
+        background: #f706ff;
+    }
+
+    .middlepage4{
+        background-color: #e5ff00;
+    }
+
+    #toppage{
+        height: 10vh;
+    }
+    #bottompage{
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 767.98px) and (min-width: 576px){
+    p{
+        font-size: 1.3rem;
+    }
+
+    a{
+        font-size: 1.3rem;
+    }
+
+    .middlepageblock{
+        height: 20vh;
+    }
+
+    .middlepage1{
+        background-color: #d61919;
+    }
+
+    .middlepage2{
+        background: #22fff4;
+    }
+
+    .middlepage3{
+        background: #5daf7d;
+    }
+
+    .middlepage4{
+        background-color: #e9d41d;
+    }
+
+    #toppage{
+        height: 10vh;
+        background-color: #ac2bdf;
+    }
+
+    #bottompage{
+        height: 10vh;
+        background-color: #17c534;
+    }
+
+    #navigation{
+        background-color: #b88b8b;
+    }
+}
+
+@media screen and (max-width: 991.98px) and (min-width: 768px){
+    p{
+        font-size: 1.5rem;
+    }
+
+    a{
+        font-size: 1.5rem;
+    }
+
+    .middlepageblock{
+        border-radius: 50%;
+    }   
+
+    .middlepage1{
+        background-image: url("../img/lion.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .middlepage2{
+        background: #2266ff;
+    }
+
+    .middlepage3{
+        background: #22ff77;
+    }
+
+    .middlepage4{
+        background-color: #ff7a22;
+    }
+
+    #toppage {
+        background-color: rgb(127, 0, 139);
+    }
+
+    #navigation{
+        background-color: #1a7ba1;
+    }
+
+}
+
+@media screen and (max-width: 1199.98px) and (min-width: 992px){
+    .middlepageblock{
+        border-radius: 50%;
+    } 
+    
+    .middlepage1{
+        background-image: url("../img/lion.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .middlepage2{
+        background: #2266ff;
+    }
+
+    .middlepage3{
+        background: #22ff77;
+    }
+
+    .middlepage4{
+        background-color: #ff7a22;
+    }
+
+    #toppage {
+        background-color: rgb(127, 0, 139);
+    }
+
+    #navigation{
+        background-color: #1a7ba1;
+    }
+}
+
+@media screen and (max-width: 1399.98px){
+
+}
+
+
+

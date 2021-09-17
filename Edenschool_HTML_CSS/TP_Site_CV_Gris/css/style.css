@@ -1,0 +1,236 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* global */
+h1{
+    margin: 10px 0px 0px 80px;
+    font-size: 50px;
+}
+
+header{
+    background-color: #F2F2F2;
+    height: 230px;
+    border-bottom: solid #BBBBBB 2px;
+}
+
+
+#globheader{
+    width: 70%;
+    margin: 0 auto;
+    height: 230px;
+}
+
+#globheader section:first-of-type{
+    width: 70%;
+    height: 160px;
+    float: left;
+}
+
+#globheader aside:first-of-type{
+    width:  30%;
+    height: 160px;
+    float: left;
+}
+
+#midpageblock{
+    width: 70%;
+    height: 70em;
+    margin: 0 auto;
+}
+
+.presentation{
+    width: 70%;
+    height: 200px;
+    float: left;
+}
+
+.quijesuis{
+    width: 30%;
+    height: 200px;
+    float: left;
+}
+
+.presentation2{
+    width: 70%;
+    height: 650px;
+    float: left;
+    margin-top: 30px;
+}
+
+.experiencecontact{
+    width: 30%;
+    height: 600px;
+    float: left;
+    margin-top: 30px;
+}
+
+.actu{
+    height: 175px;
+}
+
+footer{
+    text-align: center;
+    height: 100px;
+    background-color: #F2F2F2;
+    border-top: 2px solid #BBBBBB;
+}
+/* header */
+
+.oneletter{
+    color: #ABBCCE;
+}
+
+#globheader aside a{
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    color:  #ABBCCE;
+}
+
+/* nav */
+#globheader nav{
+    width: 55%;
+    margin: 0 auto;
+}
+
+#globheader ul{
+    padding: 0px;
+    margin: 0px;
+    height: 70px;
+    list-style-type: none;
+}
+
+#globheader li{
+    display: inline-block;
+    width: calc(100% / 4.1);
+    height: 70px;
+    text-align: center;
+}
+
+#globheader nav a{
+    text-decoration: none;
+    color: black;
+    line-height: 70px;
+}
+
+/* présentation */
+.presentation h3{
+    font-size: 30px;
+    color: #ABBCCE;
+}
+
+.presentation p:nth-of-type(1){
+    display: inline-block;
+    width: 70%;
+    position: relative;
+    bottom: 20px;
+    margin-bottom: 0px;
+}
+/* qui suis je */
+.who div{
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 3px solid lightgray;
+}
+
+.who{
+    margin-top: 35px;
+    border: 3px solid lightgray;
+    border-radius: 15px 15px;
+}
+
+.who h4{
+    text-align: center;
+    line-height: 37px;
+    margin: 0px;
+}
+
+.who p{
+    margin-left: 10px;
+}
+/* présentation2 */
+.presentation2 p{
+    width: 70%;
+    display: inline-block;
+}
+
+.presentation2 > img{
+    width: 500px;
+    height: 350px;
+    padding-left: 14em;
+    padding-top: 5em;
+}
+/* experience */
+.xp div{
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 3px solid lightgray;
+}
+
+.xp{
+    margin-top: 35px;
+    border: 3px solid lightgray;
+    border-radius: 15px 15px;
+}
+
+.xp h4{
+    text-align: center;
+    line-height: 37px;
+    margin: 0px;
+}
+
+.xp li{
+    margin: 10px;
+}
+
+/* contact */
+.contact div{
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 3px solid lightgray;
+}
+
+.contact{
+    margin-top: 35px;
+    border: 3px solid lightgray;
+    border-radius: 15px 15px;
+}
+
+.contact h4{
+    text-align: center;
+    line-height: 37px;
+    margin: 0px;
+}
+
+.contact p{
+    margin: 10px;
+}
+
+.actu h4{
+    margin-top: 0px;
+    color: #ABBCCE;
+    font-size: 30px;
+}
+
+.actu p{
+    margin: 0px;
+}
+
+/* footer */
+footer a{
+    text-decoration: none;
+    color: #ABBCCE;
+}
+
+footer div{
+    padding-top: 20px;
+}
+/* clear */
+.clear{
+    clear: both;
+}

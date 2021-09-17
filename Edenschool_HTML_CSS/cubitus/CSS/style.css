@@ -1,0 +1,44 @@
+.green, .blue, .blue2, .brown, .red, .brownspace {
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+
+p {
+    text-align: center;
+}
+
+.green {
+    background-color: #008000;
+    border-radius: 5% 20% 30% 40%;
+}
+
+.blue {
+    background-color: #00FFFF;
+    border-radius: 50% 0% 50% 0%;
+}
+
+.blue2 {
+    background-color: #7FFFD4;
+    border-radius: 50%;
+}
+
+.brown {
+    background-color: #E9967A;
+    border-radius: 20% 40% 20% 40%;
+}
+
+.brownspace {
+    background-color: #E9967A;
+    border-radius: 20% 40% 20% 40%;
+    margin-right: 230px;
+}
+
+.red {
+    background-color: #FF0000;
+    border-radius: 20% 40% 20% 40%;
+    margin-right: 230px;
+}
+

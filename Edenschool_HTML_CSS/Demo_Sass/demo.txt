@@ -1,0 +1,9 @@
+file :
+dart-sass/sass.bat assets/scss/style.scss:assets/css/style.css
+
+directory :
+dart-sass/sass.bat assets/scss:assets/css
+
+permanant save:
+dart-sass/sass.bat assets/scss:assets/css --watch
+

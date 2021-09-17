@@ -1,0 +1,277 @@
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    width: 54%;
+    margin: 0 auto;
+}
+
+/* header */
+.detailstitle {
+    color: #7A6750;
+}
+
+h1{
+    font-size: 60px;
+    border-top: solid black 0.5px;
+    border-bottom: solid black 0.5px;
+    display: inline-block;
+    width: 450px;
+    padding: 10px;
+    margin: 0px;
+}
+
+header {
+    text-align: center;
+    height: 300px;
+}
+
+/* nav */
+
+
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+/* exemple de plat */
+
+#globalexemple {
+    width: 100%;
+    height: 600px;
+}
+
+.exempleimg {
+    width: 25%;
+}
+
+.exempleimg1 {
+    float: left;
+}
+
+.exempletxt {
+    width: 25%;
+    float: left;
+    height: 600px;
+    text-align: right;
+}
+
+.voidleft {
+    width: 25%;
+    float: left;
+    height: 600px;
+}
+
+.voidright {
+    width: 25%;
+    float: left;
+    height: 600px;
+}
+
+hr {
+    position: relative;
+    right: 200px;
+}
+
+.exempletxt h3 {
+    margin-top: 200px;
+}
+
+/* la salle */
+
+
+
+.salletxt {
+    width: 50%;
+    height: 33em;
+    float: left;
+
+}
+
+.salletxt h3 {
+    font-size: 40px;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+.sallesection {
+    width: 50%;
+    height: 33em;
+    float: right;
+}
+
+
+
+.salletxt p {
+    font-size: 25px;
+}
+
+
+
+
+/* service */
+
+.servicetxt {
+    width: 50%;
+    height: 33em;
+    float: right;
+
+}
+
+.servicetxt h3 {
+    font-size: 40px;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+.servicesection {
+    width: 50%;
+    height: 33em;
+    float: left;
+}
+
+
+
+.servicetxt p {
+    font-size: 25px;
+}
+
+/* Le dressage */
+.dressagetxt {
+    width: 50%;
+    height: 33em;
+    float: left;
+
+}
+
+.dressagetxt h3 {
+    font-size: 40px;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+.dressagesection {
+    width: 50%;
+    height: 33em;
+    float: right;
+}
+
+
+
+.dressagetxt p {
+    font-size: 25px;
+}
+
+/* Le gout */
+.gouttxt {
+    width: 50%;
+    height: 33em;
+    float: right;
+
+}
+
+.gouttxt h3 {
+    font-size: 40px;
+    width: 90%;
+    border-bottom: 1px solid black;
+}
+
+.goutsection {
+    width: 50%;
+    height: 33em;
+    float: left;
+}
+
+
+
+.gouttxt p {
+    font-size: 25px;
+}
+
+/* footer */
+.plan {
+    width: 153px;
+    height: 123px;
+    background-image: url("../img/plan.png");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.plan p {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    top: 40px;
+    font-size: 12px;
+}
+
+.textefooter {
+    text-align: center;
+}
+
+.foottitle {
+    display: inline-block;
+    width: 450px;
+    font-size: 60px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.pfoot {
+    font-size: 20px;
+}
+
+/* note */
+
+.rating {
+    width: 220px;
+    direction: rtl;
+    border: solid 1px black;
+    background-color: black;
+}
+
+.rating p, a {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+}
+
+.rating a {
+    text-decoration: none;
+    transition: color .4s;
+}
+
+.rating p {
+    margin: 2px;
+}
+
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+   color: yellow;
+   cursor: pointer;
+}
+
+
+/* clear */
+.clear {
+    clear: both;
+}
+
+
+
+
+
+
+

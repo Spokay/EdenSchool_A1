@@ -1,0 +1,53 @@
+/* topmidpage */
+
+#topmidpage h3{
+    padding-top: 35px;
+    margin: 0;
+    color: #ABBCCE;
+    font-size: 30px;
+    text-align: center;
+}
+
+#topmidpage{
+    height: 100px;
+}
+
+/* form + img */
+
+#midpageblock section:first-of-type{
+    height: 900px;
+    width: 50%;
+    float: left;
+}
+
+#midpageblock aside:first-of-type{
+    height: 900px;
+    width: 50%;
+    float: left;
+}
+
+#midpageblock aside:first-of-type img{
+    width: 665px;
+    padding-top: 150px;
+}
+
+label{
+    display: block;
+    margin-top: 20px;
+}
+
+#mailform, #subject, #msg{
+    width: 500px;
+}
+
+#mailform, #subject{
+    height: 30px;
+}
+
+#msg{
+    height: 250px;
+}
+
+.buttonsend{
+    margin-top: 20px;
+}

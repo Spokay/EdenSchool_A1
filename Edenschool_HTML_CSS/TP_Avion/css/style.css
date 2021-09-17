@@ -1,0 +1,30 @@
+td, th{
+    width: 300px;
+    height: 50px;
+}
+
+tbody{
+    text-align: center;
+}
+
+table {
+    border: 4px solid #7BA4F0;
+    border-collapse: collapse;
+}
+
+thead th:not(.void){
+    border-left: 1px dotted #7BA4F0;
+}
+
+tfoot td:not(.void){
+    border-left: 1px dotted #7BA4F0;
+}
+
+thead, tfoot{
+    background-color: #EFF6FF;
+}
+
+.boldtxt{
+    font-weight: bold;
+    text-align: center;
+}

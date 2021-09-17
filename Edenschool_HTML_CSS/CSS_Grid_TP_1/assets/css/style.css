@@ -1,0 +1,144 @@
+.wrapper2{
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-gap: 3px;
+}
+.wrapper2 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper3 div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cd, #cg{
+    background-color: #0c5460;
+    border: 1px solid white;
+}
+.c1, .c2, .c3, .c4, .c5{
+    background-color: greenyellow;
+    border: 1px solid white;
+}
+.c1{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.c2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.c5{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.c4{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.c3{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+#gauche{
+    background-color: #9A6030;
+    border: 1px solid white;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+#droit{
+    background-color: #9A6030;
+    border: 1px solid white;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+#cd{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+#cg{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.wrapper3{
+    display: grid;
+    grid-template: 100px 300px 100px / repeat(12, 1fr);
+    grid-gap: 5px;
+    margin-top: 200px;
+}
+.header, .footer{
+    background-color: yellow;
+}
+.header{
+    grid-column: 7 / 13;
+}
+.footer{
+    grid-column: 1 / 13;
+}
+.menu{
+    background-color: #80bdff;
+    z-index: 10;
+    order: -1;
+    grid-column: 1 / 7;
+}
+.content{
+    background-color: #5a189a;
+    grid-column: 1 / 13;
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .menu{
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+    }
+    .content{
+        grid-row: 2 / 3;
+        grid-column: 5 / 13;
+    }
+    .header{
+        grid-column: 1 / 13;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}

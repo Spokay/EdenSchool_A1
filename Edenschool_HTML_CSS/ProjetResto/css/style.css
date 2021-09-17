@@ -1,0 +1,282 @@
+body {
+    font-family: 'Caveat Brush', cursive;
+    width: 70%;
+    margin: 0 auto;
+}
+/* header */
+
+header {
+    background-image: url("../img/woddPlank.jpg");
+    height: 40em;
+}
+
+h1 {
+    width: 60%;
+    font-size: 50px;
+    margin: 40px;
+}
+
+h1, nav{
+    display: inline-block;
+}
+
+/* navigation */
+
+nav .list li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: #d4276d;
+}
+/* rectangle top*/
+.line1 {
+    width: 30px;
+    border: solid #d4276d 5px;
+    position: relative;
+    left: 90px;
+    bottom: 20px;
+}
+
+/* logo cerf */
+
+.globlogo {
+    width: 57%;
+}
+
+.cerfimg {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 150px solid #d4276d;
+    border-left: 150px solid transparent;
+    float: right;
+    position: relative;
+    left: 150px;
+    top: 50px;
+    opacity: 70%;
+}
+
+
+
+.fas {
+    font-size: 80px;
+    color: #d4276d;
+    position: relative;
+    left: 635px;
+    top: 415px;
+}
+
+
+
+/* OUR STORY */
+#globstory {
+    height: 30em;
+}
+
+.ourstory, .imgstory {
+    display: inline-block;
+}
+
+.ourstory {
+    width: 35%;
+    float: left;
+    height: 30em;
+    background-image: url("../img/pattern.jpg");
+    text-align: center;
+}
+
+.imgstory {
+    width: 65%;
+    height: 30em;
+}
+
+.imgasperge {
+    width: 100%;
+    height: 30em;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.ourstory p, h2 {
+    margin-top: 60px;
+}
+
+.line2 {
+    width: 30px;
+    border: solid #d4276d 5px;
+    position: relative;
+    left: 213px;
+    bottom: 10px;
+}
+
+/* FARE */
+#globfare {
+    height: 30em;
+}
+
+.g1 {
+    width: 150px;
+    height: 150px;
+}
+
+.imgfare, .freshfare {
+    display: inline-block;
+}
+
+.freshfare {
+    width: 35%;
+    height: 30em;
+    background-image: url("../img/pattern.jpg");
+    text-align: center;
+}
+
+.imgfare {
+    width: 65%;
+    height: 30em;
+    float: left;
+}
+
+.imgfare1 {
+    width: 100%;
+    height: 30em;
+}
+
+.freshfare p, h2 {
+    margin-top: 60px;
+}
+
+.line3 {
+    width: 30px;
+    border: solid #d4276d 5px;
+    position: relative;
+    left: 213px;
+}
+
+/* LOCAL DISTILLATION */
+#globdist {
+    height: 30em;
+}
+
+.g2 {
+    width: 150px;
+    height: 150px;
+}
+
+.localdist, .imgdist {
+    display: inline-block;
+}
+
+.localdist {
+    width: 35%;
+    float: left;
+    height: 30em;
+    background-image: url("../img/pattern.jpg");
+    text-align: center;
+}
+
+.imgdist {
+    width: 65%;
+    height: 30em;
+}
+
+.imgdistillation {
+    width: 100%;
+    height: 30em;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.line4 {
+    width: 30px;
+    border: solid #d4276d 5px;
+    position: relative;
+    left: 213px;
+}
+
+.localdist p, h2 {
+    margin-top: 60px;
+}
+
+/* EGGS */
+
+#eggs {
+    height: 40em;
+}
+
+#eggs img {
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+#globfoot {
+    background-image: url("../img/pattern.jpg");
+    height: 17em;
+}
+
+#globfoot h3 {
+    font-size: 50px;
+    margin-top: 0px;
+    padding-top: 65px;
+    margin-bottom: 10px;
+}
+
+.txtfoot {
+    width: 20%;
+    height: 17em;
+    text-align: center;
+}
+
+.line5 {
+    width: 30px;
+    border: solid #d4276d 5px;
+    position: relative;
+    left: 112px;
+}
+
+.logos, .txtfoot {
+    display: inline-block;
+}
+
+.logos {
+    width: 75%;
+    text-align: right;
+    color: #d4276d;
+}
+
+
+
+/* global */
+
+.txtrose {
+    font-size: 20px;
+    color: #d4276d;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* clear */
+
+.clear {
+    clear: both;
+}

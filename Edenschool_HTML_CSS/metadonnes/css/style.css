@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+#tableglob{
+    width: 60%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 4px solid #c62121;
+}
+
+td:first-child{
+    width: 40%;
+}
+
+td:last-child{
+    width: 60%;
+}
+
+th{
+    background-color: #cccccc;
+}
+
+
+[colspan="2"]{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}

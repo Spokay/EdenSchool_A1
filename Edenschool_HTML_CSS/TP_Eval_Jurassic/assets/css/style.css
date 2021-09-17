@@ -1,0 +1,284 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/dinosaure.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+h2{
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 75%;
+    margin: 3em auto;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+span.bold{
+    font-weight: bold;
+}
+
+span.italic{
+    font-style: italic;
+}
+
+/* nav */
+
+nav{
+    height: 100px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li{
+    width: calc(100%/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 50px;
+}
+
+nav ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul li a.billet{
+    width: 100%;
+    height: 30px;
+}
+
+nav ul li a:focus{
+    border-top: 1px solid #8DAE4F;
+}
+nav ul li a.billet{
+    background-color: #1C5F81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li a.billet:hover{
+    background-color: #fff;
+    color: #1C5F81;
+}
+
+/* logo */
+header section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    width: 50%;
+    margin: 10em 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.empty{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+/* block1 */
+
+.block1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.zoom{
+    width: 100%;
+    overflow: hidden;
+}
+
+.afficher{
+    display: none;
+    font-size: 2rem;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(0,36,15,1) 11%, rgba(11,131,4,1) 55%, rgba(191,177,13,1) 83%);
+    height: 10vh;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.entree:hover .afficher{
+    display: flex;
+}
+
+.zoom img{
+    width: 100%;
+}
+
+.zoom img:hover{
+    transform: scale(1.5);
+    transition: 2s ease;
+}
+
+
+.block1 h3{
+    text-align: center;
+}
+
+.block1 h3 span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* block2 */
+
+.block2{
+    display: flex;
+    width: 60%;
+    margin: 15em auto;
+    justify-content: space-between;
+}
+
+.block2 > section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.block2 > section:nth-child(1) > div:nth-child(1){
+    border-bottom: 0.7px solid grey;
+    padding-bottom: 10em;
+}
+
+.titles{
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 6px;
+}
+
+.block2 p{
+    font-size: 1.5rem;
+}
+
+.smaller-s2-b2{
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.smaller-s2-b2 p > img{
+    width: 20px;
+}
+
+.smaller-s2-b2 iframe{
+    max-width: 100%;
+    height: 37em;
+    width: 100%;
+}
+
+/* block3 */
+.block3{
+    display: flex;
+    flex-direction: column;
+}
+
+.b3-d2 > div{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.b3-d2 > div img{
+    object-fit: contain;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    background-color: #000000;
+    margin-top: 10em;
+    height: 50vh;
+}
+
+footer section{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 4em;
+}
+
+footer section:nth-child(2) img{
+    object-fit: contain;
+}
+
+.foottext{
+    list-style-type: none;
+    padding: 0;
+}
+
+.foottext a{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+
+/* buttons */
+.button{
+    width: 200px;
+    height: 40px;
+    background-color: #1C5F81;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+

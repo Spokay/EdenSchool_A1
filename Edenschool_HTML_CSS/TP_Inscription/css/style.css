@@ -1,0 +1,81 @@
+body{
+    background-image: url("../img/moroccan-flower.png");
+}
+
+#big-container{
+    width: 60%;
+    background-color: #FAF9FA;
+    margin: 20px auto;
+    opacity: 90%;
+}
+
+#big-container #medium-container{
+    width: 80%;
+    background-color: #DDD5D8;
+    padding: 40px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+
+
+fieldset div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.inputs:not(#textzone){
+    height: 50px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#photozone{
+    padding: 10px;
+    display: inline-block;
+    height: 25px !important;
+    border: 1px solid grey;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+}
+
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.checkbox div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 85px;
+}
+
+form > div:last-of-type{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 50px;
+    width: 35%;
+}
+
+#button1{
+    background-color: #377E35;
+}
+
+#button2{
+    background-color: #992f26;
+}
+
+#button1, #button2{
+    margin: 15px;
+}
+
+fieldset{
+    margin: 30px;
+}

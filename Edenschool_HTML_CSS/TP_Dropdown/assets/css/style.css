@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+*{
+    transition: height 1s;
+}
+body{
+    font-family: Montserrat, sans-serif;
+}
+nav{
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to right, #1E1D22, #78506E, #CDA3C3);
+    justify-content: space-between;
+}
+h1{
+    color: #FFF;
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    transition: background-color 1s;
+    font-weight: bold;
+}
+h1:hover{
+    cursor: pointer;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+nav > ul{
+    width: 60%;
+}
+.niveau1{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+.niveau1 li{
+    width: 152px;
+    display: inline-block;
+    padding: 20px 0;
+    transition: background-color 1s;
+}
+.niveau1 li:hover, h1:hover{
+    background-color: #28b2b2;
+}
+.niveau2 li:hover{
+    background-color: #1db27d;
+}
+.niveau1 li:hover a{
+    color: #fff;
+}
+.niveau1 a{
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+.niveau2{
+    z-index: 1;
+    position: absolute;
+    top: 58px;
+    height: 0;
+    width: 152px;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 0 0 5px 5px;
+}
+.niveau2 li{
+    background-color: #8094ff;
+    width: 100%;
+}
+.niveau2 li:last-child{
+    border-radius: 0 0 5px 5px;
+}
+.sousMenu:hover .niveau2{
+    height: 550px;
+}
+.sousMenu{
+    transition: height 0.6s;
+}
+i.fa-chevron-down{
+    margin-left: 5px;
+}

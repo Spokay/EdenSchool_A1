@@ -1,0 +1,80 @@
+body{
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.bigcontainer{
+    display: flex;
+    width: 60%;
+    background-color: grey;
+    margin: 0 auto;
+    padding: 2em;
+}
+#shop{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+#listCourse{
+    width: 30%;
+}
+
+form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#formAdd{
+    margin-bottom: 2em;
+}
+#validReset{
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 360px;
+    border: none;
+    background: hsl(0, 0%, 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    font-size: 17px;
+    outline: none;
+    margin: 20px;
+}
+
+input[type="submit"]{
+    background: hotpink;
+    padding: .75rem 1rem;
+    color: white;
+    box-shadow: 0 .75rem .5rem -.5rem hsl(0, 50%, 80%);
+}
+input[type="submit"]:hover, #clear{
+    cursor: pointer;
+}
+
+.fa-minus{
+    color: red;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+.fa-minus:hover{
+    cursor: pointer;
+}
+#listCourse ul li{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#listCourse ul{
+    list-style-type: none;
+}

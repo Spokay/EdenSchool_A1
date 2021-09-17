@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>méta-données</title>
+</head>
+<body>
+    <div id="tableglob">
+        <table border="0" cellspacing="0px">
+            <thead>
+                <tr>
+                    <th colspan="2">Description</th>
+                </tr>
+            </thead>   
+            <tbody>
+                    <tr>
+                        <td>
+                           <p>Qu'est-ce qu'une balise de méta-donnée ?</p>
+                        </td>
+        
+                        <td>
+                            <p>une méta-donnée est une information donnée au navigateur au sujet de la page en question. Une balise de méta-donnée est donc une balise (qui se place dans la partie head du html) qui sert à donner des informations à propos de la page</p>
+                        </td>
+                    </tr>
+    
+                <tr>
+                    <th colspan="2">Exemples</th>
+                </tr>
+    
+                    <tr>
+                        <td>
+                            <p>&lt;meta name="keywords" content="tartiflette, saucisson, maroilles, …" ></p>
+                        </td>
+    
+                        <td>
+                            <p>(cette balise est obsolète)Cette balise méta sert à donner un certain nombre de mots-clés associés à la page.Cette balise n'est plus utilisée car des gens en abusaient pour spammer les moteurs</p>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <p>&lt;meta name="author" content="nom de l’auteur" /></p>
+                            <p>&lt;meta name="copyright" content="propriétaire du copyright" /></p>
+                        </td>
+    
+                        <td>
+                            <p>Cette balise méta author permet aux administrateurs de sites Internet de spécifier dans le code source d’une page HTML qui a créé la page en question et qui est légalement responsable de son contenu. Ces deux balises méta sont facultatives dans le droit français.
+                            </p>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <p>&lt;meta name="robots" content="index"/></p>
+                            
+                        </td>
+    
+                        <td>
+                            <p>Pour autoriser l’indexation d’une page dans un moteur de recherche, utilisez cette balise méta. Etant donné que l’indexation de pages Web correspond au comportement standard des robots d’indexation, cette donnée est en général inutile.
+                            </p>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <p>&lt;meta http-equiv="cache-control" content="no-cache"/></p>
+                            
+                        </td>
+    
+                        <td>
+                            <p>Pour assurer qu’Internet soit rapide, il est courant de mettre des pages Web sur les serveurs proxy ou dans le cache d’un navigateur afin de les charger plus rapidement. Ce processus peut être évité grâce à la balise méta « cache-control » et le content no-cache
+                            </p>
+                        </td>
+                    </tr>
+    
+                    <tr>
+                        <td>
+                            <p>&lt;meta http-equiv="expires" content="date d’expiration en secondes"/></p>
+                            
+                        </td>
+    
+                        <td>
+                            <p>Au lieu de de bloquer complètement la mémoire cache,  l’attribut « http-equiv » vous donne la possibilité de définir une date d’expiration pour les fichiers HTML récupérés. Pour cela, utilisez cette balise
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>&lt;meta name="generator" content="Nom de l’outil (version)" /></p>
+                            
+                        </td>
+    
+                        <td>
+                            <p>
+                            Cela permet aux éditeurs du logiciel de faire des statistiques: combien de pages sont construites avec leur outil? combien de sites utilisent leur CMS? les sites qui utilisent leur CMS sont-ils rapidement passés à la dernière version majeure? etc.
+                            </p>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

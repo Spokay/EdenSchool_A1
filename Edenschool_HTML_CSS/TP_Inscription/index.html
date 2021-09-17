@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>TP_Inscriptions</title>
+</head>
+<body>
+    <section id="big-container">
+        <div id="medium-container">
+            <form action="https://www.darty.com/" method="post" class="forms" id="form1">
+                <fieldset id="fieldset1">
+                    <legend>Identité</legend>
+                    <div>
+                        <label for="nicknamezone">Pseudo *</label>
+                        <input type="text" id="nicknamezone" name="nicknamezone" placeholder="BrigitteDu59" class="inputs" required>
+                    </div>
+    
+                    <div>
+                        <label for="passwordzone">Mot de passe *</label>
+                        <input type="password" id="passwordzone" name="passwordzone" placeholder="Mot De Passe" class="inputs" required>
+                    </div>
+    
+                    <div>
+                        <label for="mailzone">Email</label>
+                        <input type="email" id="mailzone" name="mailzone" placeholder="email@exemple.fr" class="inputs">
+                    </div>
+    
+                    <div>
+                        <label for="city">Ville :</label>
+                        <select class="inputs">
+                            <option value="city1">Paris</option>
+                            <option value="city2">Lyon</option>
+                            <option value="city3">Bordeaux</option>
+                            <option value="city4">Dijon</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="postalzone">Code Postal</label>
+                        <input type="text" placeholder="92700" id="postalzone" name="postalzone" class="inputs">
+                    </div>
+
+
+                    <div>
+                        <label for="photozone">Photo</label>
+                        <input type="file" id="photozone" name="photozone" class="inputs phinput" accept=".jpg, .jpeg, .png, .pdf">
+                    </div>
+                </fieldset>
+
+                <fieldset id="fieldset2">
+                    <legend>Questions</legend>
+
+                    <div class="checkbox">
+                        <div>
+                            <input type="checkbox" id="checkbox1" name="checkbox1">
+                            <label for="checkbox1">Chine</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="checkbox2" name="checkbox2">
+                            <label for="checkbox2">Australie</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="checkbox3" name="checkbox3">
+                            <label for="checkbox3">Mars</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="textzone">Commentaire</label>
+                        <textarea type="textarea" id="textzone" name="textzone" class="inputs" rows="8" cols="70"></textarea>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <input type="checkbox" id="checkbox4" name="checkbox4" required>
+                    <label for="checkbox4">J'accepte les conditions d'utilisation du site *</label>
+                </div>
+
+                <input type="submit" value="S'inscrire" id="button1" name="button1" class="inputs">
+
+                <input type="reset" value="Annuler" id="button2" name="button1" class="inputs">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

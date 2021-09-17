@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 13px;
+}
+header{
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-position: center center;
+}
+
+#head{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+header a, header p, header h2, header h3{
+    color: #FFFFFF;
+}
+.nav-link{
+    color: #FFFFFF !important;
+}
+.nav-link:hover{
+    color: #cccccc !important;
+}
+header button.btn{
+    padding: 13px 45px;
+    outline: none;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    border-width: 2px;
+}
+header button.btn:focus{
+    outline: none !important;
+}
+.h3{
+    font-size: 1.5rem;
+}
+.h2{
+    font-size: 3rem;
+}
+#bg-grey{
+    background-color: #fafafa;
+}
+footer .card{
+    border: none;
+}
+.card-body{
+    padding: 0;
+}
+.card-body p{
+    font-size: 1rem;
+}
+.card-body h5{
+font-size: 1.25rem;
+}
+.card-img{
+    width: 70%;
+}
+
+
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html{
+        font-size: 15px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html{
+        font-size: 16px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}

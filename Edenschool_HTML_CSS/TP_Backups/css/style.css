@@ -1,0 +1,283 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+/* global */
+h1{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header{
+    background-color: #FA9100;
+    height: 400px;
+    width: 100%;
+    border-top: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    margin-top: 150px;
+}
+
+.top2 ul{
+    font-family: 'Comic Neue', cursive;
+}
+
+
+#glob-main{
+    height: 155em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#glob-content{
+    width: 1000px;
+    height: 80em;
+    margin: 0 auto;
+}
+
+#glob-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#glob-content section{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#glob-nbnm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nbnm1{
+    width: 65%;
+    background-color: #CECFD1;
+}
+
+#nbnm2{
+    width: 30%;
+    background-color: #FA9100;
+    border: 5px solid yellow;
+    height: 830px;
+}
+
+.local{
+    width: 35%;
+}
+
+.cloud{
+    width: 35%;
+}
+
+.local-and-cloud{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer{
+    height: 250px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* header */
+
+
+/* top1 */
+.top1 img{
+    width: 150px;
+    height: 350px;
+    margin-top: -60px;
+}
+
+.top1{
+    display: flex;
+    justify-content: center;
+}
+
+/* top2 */
+
+.top2{
+    width: 25%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.top2 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: center;
+    height: 100px;
+}
+
+.top2 ul li a{
+    font-size: 1.8em;
+    text-decoration: none;
+    color: white;
+}
+
+/* glob-content */
+
+#glob-content section:nth-child(3){
+    text-align: center;
+    line-height: 30px;
+}
+
+#glob-content section:nth-child(3) p{
+    font-size: 1em;
+}
+/* glob-no-backups-no-mercy */
+
+/* no backups no mercy 1 */
+#nbnm1 div:first-child h2{
+    font-size: 3.5em;
+    font-family: 'Comic Neue', cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#nbnm1 div:first-child h2 span{
+    color: #FA9100;
+}
+
+
+/* save icon */
+.fa-save{
+    color: #FA9100;
+}
+/* local */
+.local i, .local h3{
+    display: inline-block;
+    font-size: 30px;
+}
+
+.local div:first-child{
+    padding-left: 130px;
+}
+
+.txtandimglocal img, .txtandimglocal p:first-of-type{
+    float: left;
+}
+
+.txtandimglocal img{
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.txtandimglocal p:first-of-type{
+    width: 34%;
+    margin: 0px;
+    line-height: 30px;
+}
+
+.txtandimglocal p{
+    margin: 0px;
+    line-height: 30px;
+}
+/* cloud */
+
+.cloud div:first-child{
+    padding-left: 130px;
+}
+
+.cloud i, .cloud h3{
+    display: inline-block;
+    font-size: 30px;
+}
+
+.txtandimglocal ul li{
+    line-height: 30px;
+}
+
+/* button */
+
+.txtandimglocal button{
+    color: white;
+    background-color: #333333;
+    font-size: 30px;
+    width: 150px;
+    height: 70px;
+    position: relative;
+    left: 170px;
+    margin: 40px;
+}
+
+.txtandimglocal i{
+    color: white;
+}
+
+/* no backups no mercy 2 */
+#nbnm2 div:first-child h2 span{
+    color: white;
+}
+
+#nbnm2 div:first-child h2{
+    color: black;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.datalosstxt h3, .datalosstxt i{
+    display: inline-block;
+    font-size: 1.8em;
+    margin-bottom: 0px;
+}
+
+#centerdataloss{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* footer */
+footer p{
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer section h4{
+    color: #65C3C1;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Poppins";
+}
+
+footer section img{
+    width: 62px;
+    height: 88px;
+}
+
+/* clear */
+
+.clear{
+    clear: both;
+}
+
+
+
+
+

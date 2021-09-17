@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 13px;
+}
+h1, h2, h3{
+    font-family: 'Merienda', cursive;
+}
+/*header*/
+header{
+    color: #fff;
+}
+header > div.container-fluid{
+    background-color: #061339;
+
+}
+header > div:nth-child(2){
+    background-image: url('../img/background.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+    min-height: 250px;
+    width: 100%;
+    font-size: 2.2rem;
+    text-shadow: 3px 3px 3px black;
+}
+/*main*/
+.container-fluid{
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+}
+main > div:nth-child(1){
+    background-color: #f1f1f1;
+}
+.carousel-caption > h5{
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px black;
+    color: #FFFFFF;
+}
+.blue-titles{
+    color: #2f4073;
+}
+
+.form{
+    padding: 2%;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.footpage{
+    background-color: #dddddd;
+}
+.footpage img{
+    background-color: #7885a5;
+}
+.footpage h3{
+    font-size: 2.25rem;
+}
+/*footer*/
+footer{
+    background-color: #061339;
+    color: #fff;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html{
+        font-size: 17px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}

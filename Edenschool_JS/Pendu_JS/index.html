@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>pendu</title>
+</head>
+<body>
+    <div class="container mx-auto p-3">
+        <h1 class="text-center font-weight-bold my-4">jeu du pendu sur la motivation</h1>
+
+        <section class="row d-flex flex-column flex-md-row">
+            <canvas id="moncanvas" width="300" height="300" class="col-12 col-md-7">
+
+                Message for the browsers who does not support canvas
+
+            </canvas>
+
+
+            <form class="form col-12 col-md-5">
+                <div class="col-12 p-0 my-4">
+                    <input id="inputLetter" type="text" class="form-control w-100 my-3" placeholder="Lettre" maxlength="1">
+                    <input type="submit" class="btn btn-primary btn-block mb-4" id="inputSubmit">
+                    <input type="submit" class="btn btn-success btn-block my-4" id="inputStart" value="Start">
+                </div>
+                <div class="alert alert-info col-12 d-none" role="alert" id="alertStart">
+                    Vous avez commencé une nouvelle partie
+                </div>
+                <div class="alert alert-warning d-none col-12" role="alert" id="alertDouble">
+                    Cette lettre a déja été choisie
+                </div>
+                <div class="alert alert-success d-none col-12" role="alert" id="alertSuccess">
+                    Bravo cette lettre était bonne
+                </div>
+                <div class="alert alert-danger d-none col-12" role="alert" id="alertFail">
+                    Dommage cette lettre n'est pas dans le mot
+                </div>
+                <section id="virtualKb" class="d-flex flex-wrap">
+
+                </section>
+                <section id="winner-block" class="my-4">
+                    <div class="alert alert-success d-none col-12" role="alert" id="alertWinner">
+                        Bravo vous avez trouvé le mot c'étais :
+                    </div>
+                </section>
+                <section id="loser-block" class="my-4">
+                    <div class="alert alert-danger d-none col-12" role="alert" id="alertLoser">
+                        Dommage vous avez utilisé tous vos essais le mot étais :
+                    </div>
+                </section>
+            </form>
+        </section>
+        <div class="container py-4 d-flex flex-wrap" id="letterContainer">
+
+        </div>
+    </div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

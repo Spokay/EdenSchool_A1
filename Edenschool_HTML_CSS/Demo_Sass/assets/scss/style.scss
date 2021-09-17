@@ -1,0 +1,57 @@
+//variables
+@import 'partial/variables';
+//mixing
+@mixin boite1($width, $bgc){
+  width: $width;
+  background-color: $bgc;
+  padding: 10%;
+  p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1db27d;
+    background-color: $col_title;
+    span{
+      color: #0f6674;
+      background-color: #00FFFF;
+      font-style: italic;
+      font-size: $fs_text + 10;
+    }
+  }
+}
+
+
+#box{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: $fs_text;
+  background-color: #7BA4F0;
+  h1{
+    color: $col_title;
+    font-size: $fs_text * 3;
+  }
+  .boite1{
+    @include boite1(250px, red)
+  }
+  .boite2{
+    @include boite1(400px, pink)
+  }
+  a{
+    text-decoration: none;
+    color: $c_link;
+    font-size: $fs_text + 5;
+    display: block;
+    text-align: right;
+
+    &:hover{
+      text-decoration: underline;
+      color: $c_link_hover;
+      cursor: help;
+    }
+  }
+}
+
+
+/*commentaire affiché dans le code source*/
+
+// commentaire non-affiché dans le code source

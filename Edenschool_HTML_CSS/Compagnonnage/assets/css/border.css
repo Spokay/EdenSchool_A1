@@ -1,0 +1,39 @@
+
+  .svg-wrapper {
+    transform: translateY(-50%);
+    margin: 0 auto;
+    width: 320px;  
+  }
+  .shape {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 7px;
+    fill: transparent;
+    stroke: var(--orange-red);
+    border-bottom: 5px solid #5A3A31;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+
+  }
+  .text {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    line-height: 32px;
+    color: #5A3A31;
+    top: -48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .text a{
+    text-decoration: none;
+    color: #5A3A31;
+  }
+
+  .svg-wrapper:hover .shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+  }
+
+  

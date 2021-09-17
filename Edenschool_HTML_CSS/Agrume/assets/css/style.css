@@ -1,0 +1,113 @@
+html {
+    font-size: 12px;
+}
+body{
+    font-family: 'Poiret One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 7rem;
+    display: none;
+    background-color: darkgreen;
+    width: 80%;
+    color: #FFFFFF;
+    justify-content: center;
+}
+h1:nth-of-type(1){
+    display: flex;
+}
+body section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+section div{
+    width: 40vw;
+    height: 40vw;
+    background-color: limegreen;
+    border-radius: 50% 40px;
+}
+
+/* Média queries Mobile first*/
+
+@media screen and (min-width: 776px) and (max-width: 991px){
+    html {
+        font-size: 14px;
+    }
+    section div{
+        border-radius: 40px 50%;
+        background-color: yellow;
+    }
+    h1:nth-of-type(1){
+        display: none;
+    }
+    h1:nth-of-type(2){
+        display: flex;
+        background-color: yellow;
+        color: black;
+    }
+}
+
+/*Styles spécifiques pour les grands écrans type écrans d'ordinateur*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    html {
+        font-size: 18px;
+    }
+    section div{
+        border-radius: 50%;
+        background-color: darkorange;
+    }
+    h1:nth-of-type(1){
+        display: none;
+    }
+    h1:nth-of-type(3){
+        display: flex;
+        background-color: darkorange;
+        color: black;
+    }
+
+}
+
+/*Styles spécifiques pour les très grands écrans d'ordinateur*/
+@media screen and (min-width: 1200px){
+    html {
+        font-size: 20px;
+    }
+    section div{
+        border-radius: 50%;
+        background-color: orange;
+    }
+    h1:nth-of-type(1){
+        display: none;
+    }
+    h1:nth-of-type(4){
+        display: flex;
+        background-color: orange;
+        color: black;
+    }
+}
+
+/* Media queries Big First*/
+
+/*@media screen and (min-width: 992px) and (max-width: 1199px){*/
+/*    html {*/
+/*        font-size: 18px;*/
+/*    }*/
+/*}*/
+
+/*!*Styles spécifiques pour les écrans de taille moyenne type tablette*!*/
+/*@media screen and (min-width: 776px) and (max-width: 991px){*/
+/*    html {*/
+/*        font-size: 14px;*/
+/*    }*/
+/*    */
+/*}*/
+/*!*Styles spécifiques pour les écrans de téléphones mobile*!*/
+/*@media screen and (max-width: 775px){*/
+/*    html {*/
+/*        font-size: 12px;*/
+/*    }*/
+/*    */
+/*}*/

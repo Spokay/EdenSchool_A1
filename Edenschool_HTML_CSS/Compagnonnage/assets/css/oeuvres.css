@@ -1,0 +1,123 @@
+.glb-container{
+    width: 67.5%;
+    margin: 30px auto;
+    background-color: var(--bgcolor);
+    padding: 10px 0px;
+}
+
+.title{
+  text-align: center;
+  font-size: 33px;
+}
+.tout {
+    
+    margin: auto;
+    position: relative;
+    width: 120%;
+  }
+  
+  .image {
+      margin: auto;
+    display: block;
+    width: 75%;
+    height: auto;
+    height: 322px;
+    outline: none !important;
+    outline-offset: none;
+  }
+  
+  .color {
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 47px;
+    right: 0;
+    height: 322px;
+    width: 75%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 78, 78, 0.85);
+    text-align: center;
+    padding-top: 98px;
+    font-size: 28px;
+  }
+  
+  .tout:hover .color{
+    opacity: 1;
+  }
+  .mainblock{
+    background-color: rgba(90, 58, 49, 0.80);
+    margin: 10px 20px 30px;
+    width: 600px;
+    height: 400px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    outline: 2px solid white;
+    outline-offset: -15px;
+    /* background-color: blue; */
+    box-shadow: 5px 10px 40px 5px rgba(0,0,0,0.5);
+    margin-right: 6em;
+    margin-left: 5em;
+    display: flex;
+    justify-content: center;
+    margin: 1px;
+  }
+.glob{
+    background-color: rgba(254, 95, 85, 0.60 );
+   
+    margin-right: 6em;
+    margin-left: 5em;
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+     display: flex;
+    justify-content: space-around;
+     padding: 30px;
+      
+}
+
+.glob:nth-of-type(even){
+  box-shadow: 5px -5px 24px black;
+}
+
+.glob p{
+    margin: auto;
+   
+    font-size: 24px;
+}
+.image2{
+    margin: auto;
+  display: block;
+  width: 75%;
+  height: auto;
+  height: 322px;
+}
+.color2{
+ 
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 70px;
+    right: 0;
+    height: 322px;
+    width: 425px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(255, 78, 78, 0.85);
+    text-align: center;
+    padding-top: 210px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 98px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 98px;
+    font-size: 28px;
+}
+.tout:hover .color2{
+    opacity: 1;
+  }
